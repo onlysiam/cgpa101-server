@@ -21,6 +21,9 @@ const db = mysql.createConnection({
 //   database: "onlysiam_cgpa101",
 });
 
+app.get("/hey", (req, res) => {
+  res.send("heyyy);
+});
 //new user signup
 app.post("/api/register", (req, res) => {
   console.log(req.body);
